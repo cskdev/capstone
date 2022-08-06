@@ -1,0 +1,32 @@
+Step 1:
+
+Create docker images by navigating to dockerfile location
+
+docker build -t capstone .
+
+#docker image build -f /home/rahul/ansi_capstone/Dockerfile-mysql -t mysql-standalone /home/rahul/ansi_capstone
+sudo docker image build -f ./Dockerfile-mysql -t mysql-standalone ./
+
+#replace with your IP address
+sudo docker swarm init --advertise-addr 192.168.56.108
+
+Step 2 :
+
+Execute playbook 
+
+ansible-playbook playbook.yaml -vvv
+
+Step 3:
+
+rahul@rahulvm:~/ansi_capstone$ docker stack services mystack
+ID             NAME                       MODE         REPLICAS   IMAGE                     PORTS
+p92j3saazro2   mystack_java-app           replicated   2/2        capstone:latest           *:8087->8080/tcp
+hy8v1swh53vr   mystack_mysql-standalone   replicated   2/2        mysql-standalone:latest
+
+Step 4 :
+
+Make sure port is in LISTEN state
+
+rahul@rahulvm:~/ansi_capstone$ sudo netstat -tulpen | grep 8087
+tcp6       0      0 :::8087                 :::*                    LISTEN      0          413755     2076/dockerd
+

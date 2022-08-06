@@ -1,0 +1,13 @@
+# Derived from official mysql image (our base image)
+FROM mysql:5.7.36
+# Add a database
+ENV MYSQL_ROOT_PASSWORD=wipro@1234
+ENV MYSQL_PASSWORD=wipro@1234
+ENV MYSQL_DATABASE=water_services
+ENV MYSQL_USER=rahul
+
+# Add the content of the sql-scripts/ directory to your image
+# All scripts in docker-entrypoint-initdb.d/ are automatically
+# executed during container startup
+COPY capstone.sql /docker-entrypoint-initdb.d/
+#RUN chmod -R 775 /docker-entrypoint-initdb.d

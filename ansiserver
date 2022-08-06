@@ -1,0 +1,4 @@
+[local]
+vm1 ansible_connection=local
+
+remote ansible_host=192.168.56.20 ansible_user=rahul

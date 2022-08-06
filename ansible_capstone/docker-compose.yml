@@ -1,0 +1,23 @@
+---
+services:
+  java-app:
+    image: "capstone:latest"
+    depends_on:
+      - mysql-standalone
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure  
+    ports:
+      - "8087:8080"
+  mysql-standalone:
+    image: "mysql-standalone:latest" 
+    volumes:
+      - dbdata:/var/lib/mysql
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure  
+volumes:
+  dbdata:
+version: "3.9"

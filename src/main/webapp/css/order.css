@@ -1,0 +1,62 @@
+body {font-family: Arial, Helvetica, sans-serif;
+	background-color:LightBlue;
+	
+	}
+	
+* {box-sizing: border-box;}
+h1 {font-family: "Raleway", sans-serif;}
+.form-title-row{
+    text-align: center;
+    margin: 15px;
+}
+.form-register-with-email{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+	padding: 10px 25%;
+	
+    
+}
+.form-register-with-email .form-white-background{
+    width: 570px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    
+    padding: 40px 45px;
+    margin-bottom: 25px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:40%;
+  margin: 0 30%;
+  
+  
+}
+
+input[type=submit]:hover {
+  background-color: DodgerBlue;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

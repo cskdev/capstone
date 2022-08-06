@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<title>water service</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/2.jpg");
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/temp.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+#headerDiv
+{
+
+  background-color:#e0e2eb;
+ }
+  .header_innerHeaderDivs{
+  border:solid 1px gray;
+  display:inline;
+  font:normal 11px tahoma;
+  color:black;
+  }
+  .header_innerHeaderDivs:hover{
+  padding:4px;
+  }
+
+ 
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><b>CAPSTONE</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><b>ABOUT</b></a>
+      <a href="#team" class="w3-bar-item w3-button"> <i class="fa fa-check-square-o" aria-hidden="true"></i> <b>BRANDS</b></a>
+      
+      <a href="#pricing" class="w3-bar-item w3-button"> <i class="fa fa-handshake-o"></i> <b>SERVICES</b></a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> <b>CONTACT</b></a>
+	  <a href="#order" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> <b>ORDER</b></a>
+      
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">BRANDS</a>
+  
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class=" w3-hide-small" style="font-size: 30px;">
+       <p class="line"><b>Welcome  to devops  the largest collection of water brands</b></p> 
+       </span><br>
+    
+    <span class="w3-hide-medium w3-animate-right w3-animate-bottom">Our Online Water Delivery Platform in India is here to make 
+        the entire process of ordering water cans convenient and simple for you.<br>You can order branded mineral water in just a few taps! 
+        Be it Bisleri, Kinley, or Aquafina brand.<br> 
+         Just place your order and choose a slot, we will deliver the cans as per your convenience. We go the extra mile to ensure the purity 
+         and authenticity of the cans delivered to you. So, place your order right away!<br></span>
+
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+<!-- Promo Section - "We know design" -->
+<div class="w3-container " style="padding:128px 16px" id="about">
+  <div class="w3-row-padding ">
+    <div class="w3-col m6">
+      <h3><b>ABOUT US!</b></h3>
+      <p class="w3-animate-bottom">EnviroAqua is a online giant market place company started with a motive to bring all water 
+        brands at the finger tips of the consumers. Our delivered water is highly clean, odourless, salt proof and 
+        suitable for drinking under all conditions. We not only supply water but we supply it in time without delaying.</p>
+      
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/water.jpg" alt="water-service" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-container w3-light-grey" style="padding:100px 16px" >
+  <h3 class="w3-center"><b>WHY ENVIROAQUA?</b> </h3>
+ 
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-level-up w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">WATER QUALITY</p>
+      <p>We double checked the every single water bottle to ensure the purity and quality.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-handshake-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">CUSTOMER SATISFICATION</p>
+      <p>We believe in 100% customer satisfaction by giving pure water and deliver always on time.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-check-square-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">BIS & FSSAI CERTIFIED</p>
+      <p>Certified by BIS (Bureau of Indian Standards) and FSSAI (Food Safety and Standards Authority of India)</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-rupee w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">FLEXIBLE PAYMENT</p>
+      <p>Payment via online or cash on delivery and Doorstep delivery</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h2 class="w3-center"><b>THE BRANDS WE DELIVER...</b></h2>
+  
+  <div class="w3-row-padding w3-blackscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/k1.jpg" alt="Kinley" style="width:100%; height: 100%;">
+        
+      </div><br>
+      <div class="w3-card">
+        <img src="images/h.jpg" alt="Himalayan" style="width:100%; height: 100%;">
+        
+      </div>
+      
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/a1.jpg" alt="Aquafina" style="width:100%; height:100%;">
+      </div>
+      <br>
+      <div class="w3-card">
+        <img src="images/oxy.jpg" alt="oxyrich" style="width:100%; height: 100%;">
+        
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/b4.jpg" alt="Bisleri" style="width:100%;  height: 100%;"> 
+      </div><br>
+      <div class="w3-card">
+        <img src="images/o.jpg" alt="ozarka" style="width:100%; height: 100%;">
+        
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/b5.jpg" alt="Bailey" style="width:100%; height: 100%;">
+      </div>
+      <br>
+      <div class="w3-card">
+        <img src="images/d1.jpg" alt="dasani" style="width:100%; height: 100%;">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+
+
+<!-- Work Section -->
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3><b>OUR SERVICES</b></h3>
+  <p class="w3-large"><marquee width="100%" direction="left" scrollamount="12"height="25px">
+    <b>Choose a service that fits your needs...</b>
+    </marquee> </p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Bulk Orders</li>
+        <li class="w3-padding-16"><b>If you are planning to organize parties or events, Our water delivery services can come in handy.</b></li>
+       
+        <li class="w3-padding-16">
+          <b>We accept bulk orders too! Besides our own brand of drinking water cans, we also provide other options like Kinley, Aquafina, Bisleri and many more..</b>
+          
+        </li>
+        <li class="w3-padding-16">
+            
+                <img src="images/bulk.png" alt="bulk" style="width:50%;">
+                
+            
+            
+          </li>
+        
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-light-blue w3-xlarge w3-padding-48">Scheduled Water</li>
+        <li class="w3-padding-16"><b>Get your drinking water needs sorted three days in advance by using our Scheduled Water service. </b></li>
+        
+        <li class="w3-padding-16">
+         <b>
+             Our water delivery app will make sure the cans are delivered to your doorstep right on time, even if you have been busy the entire day.
+
+         </b>
+        </li><li class="w3-padding-16">
+            
+             <img src="images/schedule.png" alt="schedule" style="width:50%;">
+            
+        
+        
+      </li>
+        
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Filter Water</li>
+        <li class="w3-padding-16"><b>Running out of drinking water? No worries! We provide highly clean, odourless suitable for drinking water.
+             </b></li>
+        <li class="w3-padding-16"><b>Just use our app’s paniwala feature and we will deliver water cans to your location in just 3 hours. We make it possible by connecting you to the nearest delivery vehicle.</b></li>
+        
+        <li class="w3-padding-16">
+            
+            <img src="images/p.png" alt="p" style="width:40%;">
+            
+        
+        
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="bgimg-2 w3-display-container w3-grayscale-min w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center"><b>CONTACT</b></h3>
+  <p class="w3-center w3-large line1">Lets Get in touch for bulk orders and corporate orders....</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Pune, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9872789872</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Copyright © 2016-2020 © EnviroAqua - All rights reserved.</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

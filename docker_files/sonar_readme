@@ -1,0 +1,7 @@
+sonar.projectKey=capstone
+sonar.projectName=capstone
+sonar.projectVersion=1.0
+sonar.login=admin
+sonar.password=wipro@1234
+sonar.sources=/var/lib/jenkins/workspace/$JOB_NAME/src
+sonar.java.binaries=target/classes

@@ -1,0 +1,63 @@
+
+
+.line {
+    position: relative;
+    top: 50%;
+    width: 0ch;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: typewriter 11s steps(39) infinite,blinkTextCursor 1s steps(40) infinite normal;
+   
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.line1 {
+    position: relative;
+    top: 50%;
+    width: 0ch;
+    margin: 0 auto;
+    border-right: 2px solid rgba(14, 13, 13, 0.75);
+    animation: typewriter1 12s steps(42) infinite,blinkTextCursor1 1s steps(42) infinite normal;
+   
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+@keyframes typewriter {
+    0%{
+          width: 0ch;
+    }
+    50%{
+          width: 39ch;
+    }
+}
+
+@keyframes blinkTextCursor {
+    0%{
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    50% {
+          border-right-color: gray;
+    }
+}
+@keyframes typewriter1 {
+    0%{
+          width: 0ch;
+    }
+    50%{
+          width: 42ch;
+    }
+}
+
+@keyframes blinkTextCursor1 {
+    0%{
+          border-right-color: rgba(186, 184, 189, 0.75);
+    }
+    50% {
+          border-right-color: rgb(0, 0, 0);
+    }
+}
